@@ -14,7 +14,7 @@ public class Issue35Test {
         byte[] msgBytes = Base64.decode(TEST_STRING);
         CMSSignedData sd;
         try {
-            sd = new CMSSignedData(body);
+            sd = new CMSSignedData(msgBytes);
         } catch (CMSException e) {
             Assert.fail("Message from GitHub issue 35 failed.");
         }
