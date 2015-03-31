@@ -3,6 +3,7 @@ package org.jscep.server;
 import org.junit.Test;
 import org.junit.Assert;
 import org.bouncycastle.util.encoders.Base64;
+import org.bouncycastle.cms.CMSException;
 import org.bouncycastle.cms.CMSSignedData;
 
 public class Issue35Test {
